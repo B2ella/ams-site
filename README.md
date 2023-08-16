@@ -3,3 +3,11 @@
 ![Screenshot](/images/hp.png)
 
 
+
+## <p>Scan me! </p>
+<img src="./images/QR.png" width=20% height=20%>
+
+or Vist site [here](https://steady-treacle-c9fa0e.netlify.app/)
+
+
+
