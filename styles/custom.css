@@ -1,0 +1,150 @@
+:root {
+    --Green: #108430;
+    --Dark-blue: #072545;
+    --Dark-blue-tint: #203B58;
+    --Mid-blue: #1879B9;
+    --White: #ffffff;
+    --Grey: #C2C2C2;
+    --Grey-tint: #A5ADB5;
+  }
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a , li {
+    text-decoration: none;
+    list-style: none;
+    color: #072545;
+}
+
+h5 {
+    font-size: 48px;
+}
+
+h6 {
+    font-size: 32px;
+}
+
+p span{
+    font-size: 18px;
+}
+
+.bg-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+  }
+
+  .dropdown .dropdown-menu{
+    display: none;
+  }
+  .dropdown-menu p {
+    font-size: 14px;
+  }
+ 
+  .dropdown-menu header {
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+
+  .dropdown-menu {
+    padding-top: 30px;
+    padding-left: 84px; 
+    padding-right: 44px;
+    color: #072545;
+  }
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.nav-link, .nav-link:hover{
+    color: white;
+}
+
+#hidden{
+    opacity: 0;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    position: absolute;
+    z-index: 0;
+}
+
+#hidden:hover{
+    opacity: 1;
+    color: white;  
+}
+
+  .cs-card{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+  }
+
+  .slideshow-container {
+    width: 1320px;
+    margin: 50px auto;
+    position: relative;
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color: transparent;
+  }
+  @media (max-width: 768px) {
+    .slideshow-container {
+      width: 95%;
+    }
+  }
+  .inner-slideshow {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  .track {
+    display: inline-flex;
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+  }
+  .card-container {
+    width: 600px;
+    height: 524px;
+    flex-shrink: 0;
+    padding-right: 10px;
+  }
+  @media (max-width: 768px) {
+    .card-container {
+      width: 184px;
+    }
+  }
+  .box{
+    width: 100%;
+    height: 100%;
+    background-color:  #203B58;
+    padding: 30px;
+  }
+  .slideshow-navbar{
+    position: absolute;
+    top: -80px;
+    right: 100px;
+  }
+  
+  .prev, .next{
+   display: inline;
+    cursor: pointer;
+    color: white;
+  }
+
+
+
+
+  
