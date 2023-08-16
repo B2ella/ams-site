@@ -1,30 +1,32 @@
 // slideshow
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
-const slides = document.querySelector(".slideshow-container");
-const track = document.querySelector(".track");
+const slideshow = document.querySelectorAll('.cards-slideshow');
+const prev = document.querySelectorAll('.prev');
+const next = document.querySelectorAll('.next');
+let slideshowCards = document.querySelectorAll('.cards-slideshow div');
 
-let width = slides.offsetWidth;
-let i = 0;
+//Next Carousel
+slideshow.forEach((slide, index)=>{
+  
+const nextSlide = () => {
+    if(slideshowCards[slideshowCards.length - 1]) {
+      slide.scrollTo(0, 0); 
+    } 
+    slide.scrollBy(300, 0);
+};
 
-window.addEventListener("resize", function () {
-  width = slides.offsetWidth;
+next[index].addEventListener('click', e => {
+  nextSlide(); 
 });
 
-next.addEventListener("click", function (e) {
-  e.preventDefault();
-  i = i + 1;
-  track.style.transform = "translateX(" + i * -width + "px)";
+//Prev Carousel
+const prevSlide = () => {
+   if(slideshowCards[0]) {
+    slide.scrollTo(4800,0);
+   }
+   slide.scrollBy(-300, 0); 
+};
+
+prev[index].addEventListener('click', e => {
+    prevSlide(); 
 });
-
-prev.addEventListener("click", function () {
-  i = i - 1;
-  track.style.transform = "translateX(" + i * -width + "px)";
-});
-
-// const toggle = document.getElementById('');
-// toggle.onmouseover = function(){
-//     toggle.classList.toggle('active')
-// }
-
-
+})

@@ -10,6 +10,10 @@
 
 * {
     font-family: 'Titillium Web', sans-serif;
+    
+}
+body {
+    overflow-x: hidden;
 }
 
 a , li {
@@ -72,13 +76,13 @@ p span{
     padding-left: 5px; 
     font-weight: bold;
     font-size: 10px;
+    position: absolute;
+    top: 22px;
     
 }
 
 .dropdown:hover #arrow {
     transform: rotate(180deg);
-    position: absolute;
-    top: 20px;
     margin-left: 5px;
     
 }
@@ -107,28 +111,24 @@ p span{
    padding-right: 20px;
   }
 
-  .slideshow-container {
+.cards-slideshow-container {
     width: 1320px;
-    margin: 50px auto;
     position: relative;
-    border-left-width: 4px;
-    border-left-style: solid;
-    border-left-color: transparent;
-  }
-  @media (max-width: 768px) {
-    .slideshow-container {
-      width: 95%;
-    }
-  }
-  .inner-slideshow {
+    padding: 40px 0px;
+}
+
+.cards-slideshow {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
+    padding-bottom: 5px; 
+}
+.box{
     width: 100%;
-    height: 400px;
-    overflow: hidden;
-  }
-  .track {
-    display: inline-flex;
-    height: 100%;
-    transition: transform 0.2s ease-in-out;
+    height: 80%;
+    background-color:  #203B58;
+    padding: 30px;
   }
   .card-container {
     width: 600px;
@@ -136,29 +136,20 @@ p span{
     flex-shrink: 0;
     padding-right: 10px;
   }
-  @media (max-width: 768px) {
-    .card-container {
-      width: 184px;
-    }
-  }
-  .box{
-    width: 100%;
-    height: 100%;
-    background-color:  #203B58;
-    padding: 30px;
-  }
   .slideshow-navbar{
     position: absolute;
     top: -80px;
-    right: 100px;
-  }
+    right: 100px; }
   
-  .prev, .next{
-   display: inline;
+.cards-slideshow-container button {
+    border: none;
+    background-color: transparent;
     cursor: pointer;
-    color: white;
-  }
+}
 
+.cards-slideshow::-webkit-scrollbar {
+    display: none;
+}
 
 
 
