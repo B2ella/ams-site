@@ -45,11 +45,18 @@ p span{
 
   .dropdown:hover .dropdown-menu{
     display: block;
-    margin-top: 0;
+    position: fixed;
+    left: 0;
+    padding-left: 200px;
+    padding-right: 200px;    
   }
 
   .dropdown .dropdown-menu{
     display: none;
+    margin-top: 0;
+    
+   
+  
   }
   .dropdown-menu p {
     font-size: 14px;
