@@ -22,3 +22,9 @@ prev.addEventListener("click", function () {
   track.style.transform = "translateX(" + i * -width + "px)";
 });
 
+// const toggle = document.getElementById('');
+// toggle.onmouseover = function(){
+//     toggle.classList.toggle('active')
+// }
+
+
