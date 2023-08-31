@@ -3,9 +3,10 @@
     --Dark-blue: #072545;
     --Dark-blue-tint: #203B58;
     --Mid-blue: #1879B9;
+    --Off-white: #F3F3F3;
     --White: #ffffff;
     --Grey: #C2C2C2;
-    --Grey-tint: #A5ADB5;
+    --Grey-tint: #A5ADB5; 
   }
 
 * {
@@ -14,6 +15,7 @@
 }
 body {
     overflow-x: hidden;
+    color: var(--Dark-blue);
 }
 
 a , li {
@@ -30,10 +32,19 @@ h6 {
     font-size: 32px;
 }
 
-p span{
+p {
+  font-size: 18px;
+}
+span{
+    font-size: 12px;
+}
+.tag {
     font-size: 18px;
+    text-transform: uppercase;
+  
 }
 
+/* homepage */
 .bg-video {
     position: absolute;
     right: 0;
@@ -41,6 +52,7 @@ p span{
     min-width: 100vw;
     min-height: 100vh;
     padding: 0;
+    filter: brightness(.6);
   }
 
   .dropdown:hover .dropdown-menu{
@@ -78,6 +90,10 @@ p span{
     display: none !important;
 }
 
+#wcu-title {
+  font-size: 40px;
+}
+
 #arrow  {
     color: rgb(255, 255, 255); 
     padding-left: 5px; 
@@ -97,33 +113,77 @@ p span{
     color: white;
 }
 
-#hidden{
-    opacity: 0;
-    transition-duration: .2s;
-    transition-timing-function: ease-in-out;
-    position: absolute;
-    z-index: 0;
+
+
+#bg-col {
+  background-color: var(--Dark-blue) ;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 1rem;
+
+}
+
+  /* our solution */
+  #sol-grid {
+    width: 20vw; 
+    height: 30vh;
+  }
+
+  #wcu-container {
+    padding-left: 130px; 
+    padding-right: 130px; 
+    padding-top: 20px; 
+    padding-bottom: 20px;
+  }
+
+  #case-img {
+    width: 80vw; 
+    height: 100vh;
+  }
+
+  #cs-card {
+    width: 24.8vw; 
+    height: 30vh;
+  }
+
+
+#hidden {
+  opacity: 0;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  z-index: 0;
 }
 
 #hidden:hover{
-    opacity: 1;
-    color: white;  
+  opacity: 1;
+  color: white;  
 }
-
-  .cs-card{
+  .cs-box{
     position: absolute;
     bottom: 20px;
-    right: 20px;
-   padding-left: 20px;
-   padding-right: 20px;
+    right: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 508px; 
+    height: 279.5px; 
+    background-color: var(--Green);
   }
 
 .cards-slideshow-container {
-    width: 1320px;
+    width: 1700px;
     position: relative;
+    right: 0px;
     padding: 40px 0px;
 }
 
+#Testimonial-container {
+  padding-left:510px; 
+  padding-top: 120px; 
+
+}
 .cards-slideshow {
     display: flex;
     overflow-x: auto; 
@@ -145,8 +205,8 @@ p span{
   }
   .slideshow-navbar{
     position: absolute;
-    top: -80px;
-    right: 100px; }
+    top: -60px;
+    right: 500px; }
   
 .cards-slideshow-container button {
     border: none;
@@ -158,6 +218,83 @@ p span{
     display: none;
 }
 
+#insights-container {
+  padding-left:130px; 
+  padding-right:130px; 
+  padding-top: 120px; 
+  padding-bottom:120px;
+}
 
+#insights-box {
+  width: 24.8vw; 
+  height: 30vh;
+    
+}
+/* 
+@media (min-width: 576px) { ... }
+
+
+@media (min-width: 768px) { ... }
+
+
+@media (min-width: 992px) { ... }
+
+
+@media (min-width: 1200px) { ... } */
+
+
+@media (min-width: 1500px){
+  #bg-col {
+    padding: 1.5rem;
+  }
+
+  /* our solution */
+#sol-grid {
+  width: 425px; 
+  height: 330px;
+}
+
+#wcu-container {
+  padding-left: 238px; 
+  padding-right: 238px; 
+
+}
+#case-img {
+  width: 1440px; 
+  height:820px;
+}
+.cs-box{
+  position: absolute;
+  right: 20px;
+
+}
+
+#cs-card {
+  width: 452px; 
+  height: 300px;
+}
+
+#Testimonial-container {
+  padding-left:238px; 
+  padding-top: 120px; 
+  overflow-y: hidden;
+}
+
+.slideshow-navbar{
+  top: -80px;
+  right: 300px; }
+
+  #insights-container {
+    padding-left:238px; 
+    padding-right:238px; 
+    padding-top: 120px; 
+    padding-bottom:120px;
+  }
+
+  #insights-box{
+    width: 452px; 
+    height: 300px;
+  }
+}
 
   
